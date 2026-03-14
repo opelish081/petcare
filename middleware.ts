@@ -1,5 +1,5 @@
 // middleware.ts — จัดการ Auth guard และ i18n routing
-import { createServerClient } from '@supabase/ssr'
+import { createServerClient, type CookieOptions } from '@supabase/ssr'
 import { NextResponse, type NextRequest } from 'next/server'
 import createIntlMiddleware from 'next-intl/middleware'
 
@@ -16,12 +16,11 @@ const intlMiddleware = createIntlMiddleware({
 export async function middleware(request: NextRequest) {
   const { pathname, searchParams } = request.nextUrl
 
-  // ข้าม static files
   if (pathname.startsWith('/_next') || pathname.startsWith('/api/cron')) {
     return NextResponse.next()
   }
 
-  // ---- จัดการ Supabase Auth Error (เช่น otp_expired, link หมดอายุ) ----
+  // จัดการ Supabase Auth Error
   const errorCode = searchParams.get('error_code')
   const errorType = searchParams.get('error')
   if (errorCode || errorType === 'access_denied') {
@@ -32,7 +31,6 @@ export async function middleware(request: NextRequest) {
     return NextResponse.redirect(loginUrl)
   }
 
-  // ตรวจสอบ auth
   let response = NextResponse.next({ request })
 
   const supabase = createServerClient(
@@ -43,7 +41,7 @@ export async function middleware(request: NextRequest) {
         getAll() {
           return request.cookies.getAll()
         },
-        setAll(cookiesToSet) {
+        setAll(cookiesToSet: { name: string; value: string; options?: CookieOptions }[]) {
           cookiesToSet.forEach(({ name, value }) =>
             request.cookies.set(name, value)
           )
