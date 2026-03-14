@@ -1,3 +1,4 @@
+import React from 'react'
 // app/layout.tsx — Root layout (ไม่มี locale)
 import type { Metadata } from 'next'
 import './globals.css'

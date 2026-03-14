@@ -1,3 +1,4 @@
+import React from 'react'
 // app/[locale]/layout.tsx — Layout หลักที่มี locale และ auth
 import { NextIntlClientProvider } from 'next-intl'
 import { getMessages } from 'next-intl/server'

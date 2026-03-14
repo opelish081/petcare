@@ -1,3 +1,4 @@
+import React from 'react'
 // app/[locale]/(app)/layout.tsx — Layout สำหรับหน้าที่ต้อง login
 import { redirect } from 'next/navigation'
 import { createClient } from '@/lib/supabase/server'

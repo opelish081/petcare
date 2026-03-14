@@ -1,3 +1,4 @@
+import React from 'react'
 // components/ui/Badge.tsx — Badge component สำหรับแสดงสถานะ
 import { cn } from '@/lib/utils'
 

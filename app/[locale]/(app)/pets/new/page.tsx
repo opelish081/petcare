@@ -1,4 +1,5 @@
 'use client'
+import React from 'react'
 // app/[locale]/(app)/pets/new/page.tsx — เพิ่มสัตว์เลี้ยงใหม่
 
 import { useState } from 'react'
