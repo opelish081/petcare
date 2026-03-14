@@ -66,7 +66,7 @@ export default function NewAppointmentPage({
       if (!user) return
       const { data } = await supabase
         .from('pets')
-        .select('id, name, type')
+        .select('*')
         .eq('user_id', user.id)
         .order('name')
       setPets(data || [])
