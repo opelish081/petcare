@@ -1,0 +1,122 @@
+{
+  "common": {
+    "appName": "PetCare",
+    "loading": "กำลังโหลด...",
+    "save": "บันทึก",
+    "cancel": "ยกเลิก",
+    "delete": "ลบ",
+    "edit": "แก้ไข",
+    "back": "กลับ",
+    "confirm": "ยืนยัน",
+    "close": "ปิด",
+    "search": "ค้นหา",
+    "noData": "ไม่พบข้อมูล",
+    "error": "เกิดข้อผิดพลาด",
+    "success": "สำเร็จ"
+  },
+  "nav": {
+    "dashboard": "หน้าหลัก",
+    "pets": "สัตว์เลี้ยง",
+    "appointments": "นัดหมาย",
+    "profile": "โปรไฟล์",
+    "logout": "ออกจากระบบ"
+  },
+  "auth": {
+    "login": "เข้าสู่ระบบ",
+    "register": "สมัครสมาชิก",
+    "email": "อีเมล",
+    "password": "รหัสผ่าน",
+    "fullName": "ชื่อ-นามสกุล",
+    "confirmPassword": "ยืนยันรหัสผ่าน",
+    "forgotPassword": "ลืมรหัสผ่าน?",
+    "noAccount": "ยังไม่มีบัญชี?",
+    "hasAccount": "มีบัญชีแล้ว?",
+    "loginSuccess": "เข้าสู่ระบบสำเร็จ",
+    "registerSuccess": "สมัครสมาชิกสำเร็จ",
+    "logoutSuccess": "ออกจากระบบสำเร็จ"
+  },
+  "dashboard": {
+    "title": "หน้าหลัก",
+    "welcome": "สวัสดี, {name}!",
+    "upcomingAppointments": "นัดหมายที่กำลังจะมาถึง",
+    "myPets": "สัตว์เลี้ยงของฉัน",
+    "noUpcoming": "ไม่มีนัดหมายในช่วง 7 วันนี้",
+    "addPet": "เพิ่มสัตว์เลี้ยง",
+    "addAppointment": "สร้างนัดหมาย",
+    "totalPets": "สัตว์เลี้ยงทั้งหมด",
+    "pendingAppointments": "นัดหมายที่รอ",
+    "completedThisMonth": "เสร็จแล้วเดือนนี้"
+  },
+  "pets": {
+    "title": "สัตว์เลี้ยง",
+    "addPet": "เพิ่มสัตว์เลี้ยง",
+    "name": "ชื่อ",
+    "type": "ประเภท",
+    "breed": "สายพันธุ์",
+    "birthdate": "วันเกิด",
+    "gender": "เพศ",
+    "notes": "โน้ตเพิ่มเติม",
+    "image": "รูปภาพ",
+    "age": "อายุ",
+    "male": "เพศผู้",
+    "female": "เพศเมีย",
+    "types": {
+      "dog": "สุนัข",
+      "cat": "แมว",
+      "rabbit": "กระต่าย",
+      "bird": "นก",
+      "fish": "ปลา",
+      "other": "อื่นๆ"
+    },
+    "addSuccess": "เพิ่มสัตว์เลี้ยงสำเร็จ",
+    "editSuccess": "แก้ไขข้อมูลสำเร็จ",
+    "deleteSuccess": "ลบสัตว์เลี้ยงสำเร็จ",
+    "deleteConfirm": "คุณแน่ใจหรือไม่ว่าต้องการลบ {name}?",
+    "healthHistory": "ประวัติสุขภาพ",
+    "appointments": "นัดหมาย",
+    "noPets": "ยังไม่มีสัตว์เลี้ยง เพิ่มสัตว์เลี้ยงตัวแรกได้เลย!"
+  },
+  "appointments": {
+    "title": "นัดหมาย",
+    "newAppointment": "สร้างนัดหมาย",
+    "appointmentType": "ประเภทนัด",
+    "appointmentTitle": "ชื่อนัดหมาย",
+    "appointmentDate": "วันเวลานัด",
+    "location": "สถานที่",
+    "status": "สถานะ",
+    "notes": "โน้ต",
+    "pet": "สัตว์เลี้ยง",
+    "notifyDays": "แจ้งเตือนล่วงหน้า",
+    "day1": "1 วัน",
+    "day2": "2 วัน",
+    "day3": "3 วัน",
+    "types": {
+      "vet": "พบหมอ",
+      "vaccine": "ฉีดวัคซีน",
+      "grooming": "ตัดขน/อาบน้ำ",
+      "other": "อื่นๆ"
+    },
+    "statuses": {
+      "pending": "รอนัด",
+      "completed": "เสร็จแล้ว",
+      "cancelled": "ยกเลิก"
+    },
+    "markCompleted": "ทำเครื่องหมายว่าเสร็จแล้ว",
+    "markCancelled": "ยกเลิกนัด",
+    "addSuccess": "สร้างนัดหมายสำเร็จ",
+    "updateSuccess": "อัพเดทนัดหมายสำเร็จ",
+    "deleteSuccess": "ลบนัดหมายสำเร็จ",
+    "completedNote": "เมื่อทำเครื่องหมายว่าเสร็จแล้ว ระบบจะบันทึกลงประวัติสุขภาพอัตโนมัติ",
+    "noAppointments": "ยังไม่มีนัดหมาย",
+    "upcoming": "นัดที่กำลังจะมา",
+    "history": "ประวัตินัดหมาย"
+  },
+  "email": {
+    "reminderSubject": "🐾 แจ้งเตือน: {petName} มีนัดหมาย{daysText}",
+    "daysText": {
+      "1": "พรุ่งนี้",
+      "2": "อีก 2 วัน",
+      "3": "อีก 3 วัน"
+    }
+  }
+}

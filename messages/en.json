@@ -1,0 +1,122 @@
+{
+  "common": {
+    "appName": "PetCare",
+    "loading": "Loading...",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "back": "Back",
+    "confirm": "Confirm",
+    "close": "Close",
+    "search": "Search",
+    "noData": "No data found",
+    "error": "An error occurred",
+    "success": "Success"
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "pets": "Pets",
+    "appointments": "Appointments",
+    "profile": "Profile",
+    "logout": "Logout"
+  },
+  "auth": {
+    "login": "Login",
+    "register": "Register",
+    "email": "Email",
+    "password": "Password",
+    "fullName": "Full Name",
+    "confirmPassword": "Confirm Password",
+    "forgotPassword": "Forgot password?",
+    "noAccount": "Don't have an account?",
+    "hasAccount": "Already have an account?",
+    "loginSuccess": "Login successful",
+    "registerSuccess": "Registration successful",
+    "logoutSuccess": "Logged out successfully"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "welcome": "Hello, {name}!",
+    "upcomingAppointments": "Upcoming Appointments",
+    "myPets": "My Pets",
+    "noUpcoming": "No appointments in the next 7 days",
+    "addPet": "Add Pet",
+    "addAppointment": "New Appointment",
+    "totalPets": "Total Pets",
+    "pendingAppointments": "Pending Appointments",
+    "completedThisMonth": "Completed This Month"
+  },
+  "pets": {
+    "title": "Pets",
+    "addPet": "Add Pet",
+    "name": "Name",
+    "type": "Type",
+    "breed": "Breed",
+    "birthdate": "Birthdate",
+    "gender": "Gender",
+    "notes": "Notes",
+    "image": "Image",
+    "age": "Age",
+    "male": "Male",
+    "female": "Female",
+    "types": {
+      "dog": "Dog",
+      "cat": "Cat",
+      "rabbit": "Rabbit",
+      "bird": "Bird",
+      "fish": "Fish",
+      "other": "Other"
+    },
+    "addSuccess": "Pet added successfully",
+    "editSuccess": "Pet updated successfully",
+    "deleteSuccess": "Pet deleted successfully",
+    "deleteConfirm": "Are you sure you want to delete {name}?",
+    "healthHistory": "Health History",
+    "appointments": "Appointments",
+    "noPets": "No pets yet. Add your first pet!"
+  },
+  "appointments": {
+    "title": "Appointments",
+    "newAppointment": "New Appointment",
+    "appointmentType": "Type",
+    "appointmentTitle": "Title",
+    "appointmentDate": "Date & Time",
+    "location": "Location",
+    "status": "Status",
+    "notes": "Notes",
+    "pet": "Pet",
+    "notifyDays": "Notify before",
+    "day1": "1 day",
+    "day2": "2 days",
+    "day3": "3 days",
+    "types": {
+      "vet": "Vet Visit",
+      "vaccine": "Vaccination",
+      "grooming": "Grooming",
+      "other": "Other"
+    },
+    "statuses": {
+      "pending": "Pending",
+      "completed": "Completed",
+      "cancelled": "Cancelled"
+    },
+    "markCompleted": "Mark as Completed",
+    "markCancelled": "Cancel Appointment",
+    "addSuccess": "Appointment created",
+    "updateSuccess": "Appointment updated",
+    "deleteSuccess": "Appointment deleted",
+    "completedNote": "Marking as completed will automatically add to health history",
+    "noAppointments": "No appointments yet",
+    "upcoming": "Upcoming",
+    "history": "History"
+  },
+  "email": {
+    "reminderSubject": "🐾 Reminder: {petName} has an appointment {daysText}",
+    "daysText": {
+      "1": "tomorrow",
+      "2": "in 2 days",
+      "3": "in 3 days"
+    }
+  }
+}
