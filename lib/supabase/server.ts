@@ -1,8 +1,5 @@
-// ============================================================
 // lib/supabase/server.ts
-// Supabase client สำหรับใช้ฝั่ง Server (Server Component / API Route)
-// ============================================================
-import { createServerClient } from '@supabase/ssr'
+import { createServerClient, type CookieOptions } from '@supabase/ssr'
 import { cookies } from 'next/headers'
 
 export function createClient() {
@@ -16,21 +13,18 @@ export function createClient() {
         getAll() {
           return cookieStore.getAll()
         },
-        setAll(cookiesToSet) {
+        setAll(cookiesToSet: { name: string; value: string; options?: CookieOptions }[]) {
           try {
             cookiesToSet.forEach(({ name, value, options }) =>
               cookieStore.set(name, value, options)
             )
-          } catch {
-            // Server Component ไม่สามารถ set cookie ได้ ไม่เป็นไร
-          }
+          } catch {}
         },
       },
     }
   )
 }
 
-// Service Role client สำหรับ Cron job (bypass RLS)
 export function createServiceClient() {
   const cookieStore = cookies()
 
@@ -42,7 +36,7 @@ export function createServiceClient() {
         getAll() {
           return cookieStore.getAll()
         },
-        setAll(cookiesToSet) {
+        setAll(cookiesToSet: { name: string; value: string; options?: CookieOptions }[]) {
           try {
             cookiesToSet.forEach(({ name, value, options }) =>
               cookieStore.set(name, value, options)
